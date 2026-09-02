@@ -10,8 +10,8 @@ backend:
 media_folder: "src/assets/images"
 public_folder: "/assets/images"
 
-site_url: https://astounding-baklava-758d25.netlify.app
-display_url: https://astounding-baklava-758d25.netlify.app
+site_url: https://REPLACE-WITH-YOUR-NETLIFY-URL.netlify.app
+display_url: https://REPLACE-WITH-YOUR-NETLIFY-URL.netlify.app
 
 collections:
   - name: "site"

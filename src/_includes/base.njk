@@ -11,6 +11,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<!--
+  Netlify Identity widget — loaded on every page (not just /admin/) so
+  that invite/confirmation/password-reset links, which land on the
+  homepage by default, are actually caught and show the "set your
+  password" popup. Without this, those email links silently do nothing.
+-->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <header class="site-header" id="siteHeader">
@@ -65,5 +72,15 @@
 </footer>
 
 <script src="/script.js"></script>
+<script>
+  // If someone lands here from an invite/confirmation/recovery email link,
+  // the widget shows its popup automatically. Once they've set a password
+  // and are logged in, send them on to the CMS.
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", () => {
+      window.location.href = "/admin/";
+    });
+  }
+</script>
 </body>
 </html>
