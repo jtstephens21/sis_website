@@ -1,0 +1,114 @@
+---
+layout: base.njk
+permalink: /contact/
+title: Contact
+description: Contact Lee Ann Childers at Pearl Counseling to schedule an appointment or ask a question.
+---
+{% set c = pages.contact %}
+
+<section class="page-hero reveal">
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1>{{ c.heading }}</h1>
+    <p>{{ c.intro }}</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px;">
+  <div class="container">
+
+    <div class="info-grid reveal">
+      <div class="info-card">
+        <div class="info-icon">&#9993;</div>
+        <h4>Email</h4>
+        <a href="mailto:{{ site.email }}">{{ site.email | replace("@", "<wbr>@") | safe }}</a>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#9742;</div>
+        <h4>Phone</h4>
+        <a href="tel:{{ site.phoneTel }}">{{ site.phone }}</a>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#8962;</div>
+        <h4>Session Format</h4>
+        <p>{{ c.sessionFormat }}</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#9670;</div>
+        <h4>Rate</h4>
+        <p>{{ c.rate }}<br><span style="font-size:13.5px; color:var(--ink-soft);">{{ c.rateNote }}</span></p>
+      </div>
+    </div>
+
+    <div class="section-head reveal">
+      <span class="eyebrow">Getting Started</span>
+      <h2>{{ c.stepsHeading }}</h2>
+      <div class="intro-photo" style="margin: 24px auto 0;">
+        <img src="{{ c.stepsImage }}" alt="A potted plant labeled &quot;grow&quot; on a sunlit windowsill" loading="lazy">
+      </div>
+    </div>
+    <div class="steps reveal" style="margin-bottom:80px;">
+      {%- for step in c.steps %}
+      <div class="step">
+        <div class="step-num">{{ loop.index }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-media">
+        <div class="contact-photo">
+          <img src="{{ c.headshot }}" alt="Lee Ann Childers smiling, arms crossed, standing outdoors" loading="lazy">
+        </div>
+        <div class="contact-note">
+          <strong>Please note:</strong> {{ c.crisisNote }}
+        </div>
+      </div>
+
+      <div class="form-card">
+        <!--
+          This form uses Netlify Forms — no third-party service needed.
+          Netlify detects it automatically at deploy time because of the
+          data-netlify attribute below. Submissions show up in the
+          Netlify dashboard under Forms, and you can turn on email
+          notifications there (Site configuration → Forms → Form
+          notifications) so a copy lands in your inbox too.
+        -->
+        <form
+          id="contactForm"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact">
+          <p class="visually-hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+          <div class="form-two">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone <span style="font-weight:400;color:var(--ink-soft);">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-row">
+            <label for="message">What brings you here today?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

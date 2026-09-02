@@ -1,0 +1,43 @@
+---
+layout: base.njk
+permalink: /about/
+title: About
+description: Meet Lee Ann Childers, Marriage and Family Therapist and founder of Pearl Counseling.
+---
+{% set a = pages.about %}
+
+<section class="page-hero reveal">
+  <div class="container">
+    <span class="eyebrow">About Me</span>
+    <h1>{{ a.heading }}</h1>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <div class="about-photo-main">
+          <img src="{{ a.photoMain }}" alt="Lee Ann Childers standing outdoors, smiling softly" loading="lazy">
+        </div>
+        <div class="about-photo-accent">
+          <img src="{{ a.photoAccent }}" alt="Lee Ann Childers portrait, close up" loading="lazy">
+        </div>
+      </div>
+      <div class="about-body reveal">
+        {%- for p in a.bioParagraphs %}
+        <p>{{ p }}</p>
+        {%- endfor %}
+        <div class="callout">
+          <p><strong>{{ a.faithHeading }}</strong><br>{{ a.faithText }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner reveal">
+  <h2>{{ a.ctaHeading }}</h2>
+  <p>{{ a.ctaText }}</p>
+  <a href="{{ a.ctaUrl }}" class="btn btn-primary">{{ a.ctaButtonText }}</a>
+</section>

@@ -1,0 +1,80 @@
+---
+layout: base.njk
+permalink: /
+title: Pearl Counseling
+description: Pearl Counseling offers warm, compassionate individual, couples, and family therapy with Lee Ann Childers. A space to feel heard, understood, and supported.
+---
+{% set h = pages.home %}
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">{{ h.eyebrow }}</span>
+      <h1>{{ h.heroTitlePre }}<em>{{ h.heroTitleEmphasis }}</em>{{ h.heroTitlePost }}</h1>
+      <p class="hero-sub">{{ h.heroSub }}</p>
+      <div class="hero-ctas">
+        <a href="/contact/" class="btn btn-primary">Reach Out</a>
+        <a href="/approach/" class="btn btn-ghost">Learn About My Approach</a>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <svg class="blob-shape" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#E7E9D8" d="M420,300Q430,400,330,440Q230,480,150,410Q70,340,90,240Q110,140,210,100Q310,60,380,140Q450,220,420,300Z"></path>
+      </svg>
+      <svg class="blob-shape" style="opacity:.6; transform: scale(.82) translate(6%, 8%);" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#EFE7F3" d="M400,260Q420,360,320,420Q220,480,140,400Q60,320,100,220Q140,120,240,90Q340,60,390,150Q440,240,400,260Z"></path>
+      </svg>
+      <div class="hero-photo">
+        <img src="{{ h.heroImage }}" alt="Lee Ann Childers smiling warmly, seated outdoors" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro-strip">
+  <div class="container">
+    <div class="intro-inner reveal">
+      <div class="intro-photo">
+        <img src="{{ h.introImage }}" alt="A small green plant growing amid dry leaves" loading="lazy">
+      </div>
+      <p class="intro-quote">&ldquo;{{ h.introQuote }}&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<section class="break-section reveal" style="background-image:url('{{ h.breakImage }}');">
+  <blockquote>{{ h.breakQuote }}</blockquote>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get to Know Pearl Counseling</span>
+      <h2>{{ h.teaserHeading }}</h2>
+    </div>
+    <div class="card-grid reveal">
+      {%- for t in h.teasers %}
+      <a href="{{ t.url }}" class="card">
+        <div class="card-media"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></div>
+        <div class="card-body">
+          <h3>{{ t.title }}</h3>
+          <p>{{ t.text }}</p>
+          <span class="teaser-link">{{ t.linkText }} <span class="arrow">&rarr;</span></span>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container notebook-strip reveal">
+    <img src="{{ h.notebookImage }}" alt="Hand-lettered note reading: Difficult roads often lead to beautiful destinations" loading="lazy">
+  </div>
+</section>
+
+<section class="cta-banner reveal">
+  <h2>{{ h.ctaHeading }}</h2>
+  <p>{{ h.ctaText }}</p>
+  <a href="/contact/" class="btn btn-primary">Reach Out</a>
+</section>

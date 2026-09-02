@@ -1,0 +1,16 @@
+{
+  "heading": "Interested in scheduling appointments? Or just have a question?",
+  "intro": "Fill out the form below, call, or send an email — whatever's easiest. I aim to return calls and messages within 48 business hours.",
+  "sessionFormat": "In person & telehealth",
+  "rate": "$120 per session",
+  "rateNote": "Insurance is not currently accepted",
+  "stepsHeading": "Three simple steps",
+  "stepsImage": "/assets/images/grow-pots.jpg",
+  "steps": [
+    { "title": "Reach Out", "text": "Send a message, call, or email to ask about availability and whether we're a good fit." },
+    { "title": "Schedule a Consultation", "text": "We'll set up a time to talk through what brings you to therapy and answer any questions you have." },
+    { "title": "Begin Your Sessions", "text": "Start meeting regularly in a space built around your goals, your story, and your pace." }
+  ],
+  "headshot": "/assets/images/contact-headshot.jpg",
+  "crisisNote": "This form is not a secure or monitored line for emergencies. If you are experiencing a mental health crisis, please call or text 988 (Suicide & Crisis Lifeline) or go to your nearest emergency room."
+}

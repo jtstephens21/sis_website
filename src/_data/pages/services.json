@@ -1,0 +1,31 @@
+{
+  "heading": "Ways we can work together",
+  "intro": "Support for anxiety, relationship concerns, past experiences, and life's transitions — wherever you're starting from. Sessions are available in person and via telehealth.",
+  "cards": [
+    {
+      "title": "Individual Therapy",
+      "text": "For anxiety, life transitions, and the effects of past experiences — a space to better understand yourself and move toward the life you want.",
+      "image": "/assets/images/individual-therapy.jpg",
+      "extraImages": []
+    },
+    {
+      "title": "Couples Therapy",
+      "text": "For partners navigating relationship concerns and disconnection — rebuilding understanding, communication, and closeness.",
+      "image": "/assets/images/couples-therapy.jpg",
+      "extraImages": []
+    },
+    {
+      "title": "Family Therapy",
+      "text": "For families working through patterns that leave everyone feeling stuck — creating a home where every voice is heard.",
+      "image": "/assets/images/family-therapy.jpg",
+      "extraImages": ["/assets/images/family-detail-1.jpg", "/assets/images/family-detail-2.jpg"]
+    }
+  ],
+  "faithHeading": "Faith-Integrated Care Available",
+  "faithText": "For clients who wish to incorporate their faith into the counseling process, I am happy to integrate faith-based perspectives and beliefs in a way that feels meaningful and authentic to them.",
+  "faithImage": "/assets/images/flower-bloom.jpg",
+  "ctaHeading": "Ready to get started?",
+  "ctaText": "Reach out to ask about availability, rates, and how to schedule your first session.",
+  "ctaButtonText": "Contact Me",
+  "ctaUrl": "/contact/"
+}

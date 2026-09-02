@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Pretty-print 404s etc. can be added later; kept minimal for now.

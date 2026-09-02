@@ -1,0 +1,39 @@
+{
+  "eyebrow": "Lee Ann Childers · Marriage & Family Therapist",
+  "heroTitlePre": "A space to feel ",
+  "heroTitleEmphasis": "heard",
+  "heroTitlePost": ", understood, and supported.",
+  "heroSub": "Individual, couples, and family therapy rooted in connection, curiosity, and self-compassion — so you can move toward the life and relationships you want.",
+  "heroImage": "/assets/images/hero-headshot.jpg",
+  "introQuote": "I believe that everyone has a story, and sometimes the experiences, relationships, and messages we have carried throughout our lives can shape the way we see ourselves and connect with others.",
+  "introImage": "/assets/images/growth-in-dark.jpg",
+  "breakQuote": "You do not have to navigate it alone.",
+  "breakImage": "/assets/images/light-rays.jpg",
+  "teaserHeading": "Where would you like to start?",
+  "teasers": [
+    {
+      "title": "About Me",
+      "text": "A little about who I am, and the belief that everyone has a story worth understanding.",
+      "linkText": "Read my story",
+      "url": "/about/",
+      "image": "/assets/images/about-headshot.jpg"
+    },
+    {
+      "title": "My Approach",
+      "text": "How connection, curiosity, and self-compassion shape the way we work together.",
+      "linkText": "See my approach",
+      "url": "/approach/",
+      "image": "/assets/images/curiosity.jpg"
+    },
+    {
+      "title": "Services",
+      "text": "Individual, couples, and family therapy — support for wherever you're starting from.",
+      "linkText": "Explore services",
+      "url": "/services/",
+      "image": "/assets/images/family-therapy.jpg"
+    }
+  ],
+  "notebookImage": "/assets/images/quote-notebook.jpg",
+  "ctaHeading": "Ready to take the first step?",
+  "ctaText": "Reach out today to ask about availability and getting started. I look forward to hearing from you."
+}

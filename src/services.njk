@@ -1,0 +1,53 @@
+---
+layout: base.njk
+permalink: /services/
+title: Services
+description: Individual, couples, and family therapy with Lee Ann Childers at Pearl Counseling. In-person and telehealth sessions available.
+---
+{% set s = pages.services %}
+
+<section class="page-hero reveal">
+  <div class="container">
+    <span class="eyebrow">Services</span>
+    <h1>{{ s.heading }}</h1>
+    <p>{{ s.intro }}</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="card-grid reveal">
+      {%- for c in s.cards %}
+      <div class="card">
+        <div class="card-media"><img src="{{ c.image }}" alt="{{ c.title }}" loading="lazy"></div>
+        <div class="card-body">
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.text }}</p>
+        </div>
+        {%- if c.extraImages and c.extraImages.length > 0 %}
+        <div class="card-duo">
+          {%- for img in c.extraImages %}
+          <img src="{{ img }}" alt="" loading="lazy">
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+
+    <div class="faith-banner reveal">
+      <img class="faith-bg" src="{{ s.faithImage }}" alt="">
+      <div class="faith-banner-icon">&#10047;</div>
+      <div class="faith-banner-text">
+        <h4>{{ s.faithHeading }}</h4>
+        <p>{{ s.faithText }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner reveal">
+  <h2>{{ s.ctaHeading }}</h2>
+  <p>{{ s.ctaText }}</p>
+  <a href="{{ s.ctaUrl }}" class="btn btn-primary">{{ s.ctaButtonText }}</a>
+</section>

@@ -1,0 +1,31 @@
+{
+  "heading": "Connection, curiosity, and self-compassion",
+  "intro": "Healing happens through relationship \u2014 not a clinical checklist. Here's what that looks like in our work together.",
+  "cards": [
+    {
+      "title": "Connection",
+      "text": "Real change starts in a relationship where you feel truly heard. Our sessions are a warm, collaborative space, built around you.",
+      "image": "/assets/images/connection.jpg"
+    },
+    {
+      "title": "Curiosity",
+      "text": "Together we get curious about the patterns that keep you stuck, and how past experience may be showing up in your life today.",
+      "image": "/assets/images/curiosity.jpg"
+    },
+    {
+      "title": "Self-Compassion",
+      "text": "Growth isn't about fixing what's broken. It's meeting yourself with understanding as you build new ways forward.",
+      "image": "/assets/images/self-compassion.jpg"
+    }
+  ],
+  "modalitiesHeading": "Modalities",
+  "modalitiesIntro": "",
+  "modalities": [],
+  "transitionsHeading": "Life Transitions",
+  "transitionsText": "Change is rarely simple. Whatever transition brought you here, I'll walk alongside you as you find your footing.",
+  "transitionsImage": "/assets/images/transitions-banner.jpg",
+  "ctaHeading": "See how this looks in practice",
+  "ctaText": "Individual, couples, and family therapy \u2014 explore the ways we can work together.",
+  "ctaButtonText": "View Services",
+  "ctaUrl": "/services/"
+}

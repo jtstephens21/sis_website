@@ -1,0 +1,13 @@
+{
+  "businessName": "Pearl Counseling",
+  "therapistName": "Lee Ann Childers",
+  "email": "leeannchilderscounseling@gmail.com",
+  "phone": "(615) 549-8145",
+  "phoneTel": "+16155498145",
+  "nav": [
+    { "label": "About", "url": "/about/" },
+    { "label": "My Approach", "url": "/approach/" },
+    { "label": "Services", "url": "/services/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}

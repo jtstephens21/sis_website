@@ -1,0 +1,66 @@
+---
+layout: base.njk
+permalink: /approach/
+title: My Approach
+description: Learn about Lee Ann Childers' therapeutic approach at Pearl Counseling, grounded in connection, curiosity, and self-compassion.
+---
+{% set ap = pages.approach %}
+
+<section class="page-hero reveal">
+  <div class="container">
+    <span class="eyebrow">My Approach</span>
+    <h1>{{ ap.heading }}</h1>
+    <p>{{ ap.intro }}</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container">
+    <div class="card-grid reveal">
+      {%- for c in ap.cards %}
+      <div class="card">
+        <div class="card-media"><img src="{{ c.image }}" alt="{{ c.title }}" loading="lazy"></div>
+        <div class="card-body">
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.text }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- if ap.modalities.length > 0 or ap.modalitiesIntro %}
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{ ap.modalitiesHeading }}</span>
+      <h2>How I Work</h2>
+      {%- if ap.modalitiesIntro %}<p>{{ ap.modalitiesIntro }}</p>{%- endif %}
+    </div>
+    {%- if ap.modalities.length > 0 %}
+    <div class="card-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+      {%- for m in ap.modalities %}
+      <div class="card">
+        <div class="card-body">
+          <h3>{{ m.name }}</h3>
+          <p>{{ m.description }}</p>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="break-section small reveal" style="background-image:url('{{ ap.transitionsImage }}');">
+  <h3>{{ ap.transitionsHeading }}</h3>
+  <p>{{ ap.transitionsText }}</p>
+</section>
+
+<section class="cta-banner reveal">
+  <h2>{{ ap.ctaHeading }}</h2>
+  <p>{{ ap.ctaText }}</p>
+  <a href="{{ ap.ctaUrl }}" class="btn btn-primary">{{ ap.ctaButtonText }}</a>
+</section>
