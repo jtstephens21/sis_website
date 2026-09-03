@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: netlify-decap
 
 # Local testing (see README): running `npx decap-server` alongside the dev
 # server lets you use the CMS without Netlify Identity being set up yet.
@@ -10,8 +10,8 @@ backend:
 media_folder: "src/assets/images"
 public_folder: "/assets/images"
 
-site_url: https://REPLACE-WITH-YOUR-NETLIFY-URL.netlify.app
-display_url: https://REPLACE-WITH-YOUR-NETLIFY-URL.netlify.app
+site_url: https://astounding-baklava-758d25.netlify.app
+display_url: https://astounding-baklava-758d25.netlify.app
 
 collections:
   - name: "site"
