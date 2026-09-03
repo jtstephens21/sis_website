@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: netlify-decap
 
 # Local testing (see README): running `npx decap-server` alongside the dev
 # server lets you use the CMS without Netlify Identity being set up yet.
